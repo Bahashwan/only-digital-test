@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+.mainAppDiv{
+
+  height: 90vh;
+}
+.contentDiv{
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.mainTitle {
+  color: var(--Black-blue, #42567a);
+  font-family: PT Sans;
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  width: 300px;
+  padding-left: 50px;
+  text-align: left;
+  // Border Style
+  border-left: 5px solid;
+  border-image: linear-gradient(to bottom, #3877ee, #ef5da8) 1;
+  border-image-slice: 1;
+
+  @media screen and (max-width: 750px) {
+    width: 100px;
+    font-size: 28px;
+    padding-left: 0px;
+    border: 0;
+  }
+
+  
+}

@@ -1,0 +1,38 @@
+
+.lines-container {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   border-left: 1px solid rgba(66, 86, 122, 0.2);
+   border-right: 1px solid rgba(66, 86, 122, 0.2);
+   @media screen and (max-width: 750px) {
+    display: none;
+   }
+}
+
+.horizontal-line,
+.vertical-line {
+    position: absolute;
+
+    background-color:#42567A;
+    z-index: 0; 
+    opacity: 0.2;
+}
+
+.horizontal-line {
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+}
+
+.vertical-line {
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+}
+

@@ -1,0 +1,75 @@
+.mainDivSlider {
+  position: relative;
+  top: 54vh;
+  width: 95%;
+  margin: 0 auto;
+  @media screen and (max-width: 750px) {
+  margin: 0;
+  border-top: 1px rgb(0, 0, 0, 0.2) solid;
+  padding-top: 5vh;
+  width: 95%;
+  top: 32.5vh;
+  }
+}
+.swiper-wrapper {
+  padding-left: 5%;
+  
+}
+.swiper-button-next{
+    &::after{
+
+    }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  &::after {
+
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    
+    flex-shrink: 0;
+    
+  }
+}
+.swiper-button-disabled {
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+
+
+  
+  
+}
+
+.slideTitle {
+  color: #3877ee;
+  font-family: Bebas Neue;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: left;
+}
+.slideText {
+  color: #42567a;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  width: 220px;
+}

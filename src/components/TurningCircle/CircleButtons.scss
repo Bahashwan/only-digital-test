@@ -1,0 +1,158 @@
+.dateRangeButtonsMainDiv {
+  position: relative;
+  top: 22vh;
+  z-index: 10;
+  
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  transform: rotate(30deg);
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 750px) {
+  display: none;
+  }
+}
+
+.circle {
+  position: relative;
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: rotate(0deg);
+
+  .circle-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7px;
+    height: 7px;
+    // background-color: #000000;
+    // color: #000000;
+    font-size: 0px;
+    font-weight: bold;
+    background-color: rgba(66, 86, 122);
+    // cursor: pointer;
+    // transition: background-color 0.3s ease;
+    border: 0;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    transition: height 0.2s ease-in;
+
+    &.active {
+      background-color: #f4f5f9;
+      color: #42567a;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      border: 1px solid rgba(66, 86, 122, 0.2);
+    }
+    &:hover {
+      background-color: #f4f5f9;
+      color: #42567a;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      border: 1px solid rgba(66, 86, 122, 0.2);
+    }
+  }
+}
+
+.InnerCircle {
+  position: absolute;
+  width: 83%;
+  height: 83%;
+  // background-color: #77a8f7;
+  border-radius: 50%;
+  border: 1px solid rgba(66, 86, 122, 0.2);
+  z-index: -10;
+}
+
+.controlSide {
+  position: absolute;
+  left: 13.5vw;
+  bottom: 25vh;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #42567A;
+
+  z-index: 1;
+
+font-family: PT Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  .controlSideButtons {
+    display: flex;
+    gap: 20px;
+    @media screen and (max-width: 750px) {
+    gap: 10px;
+    z-index: 10;
+    }
+    img {
+      width: 80%;
+      @media screen and (max-width: 750px) {
+      width: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 750px) {
+
+    bottom:7vh;
+    left:6vw;
+    gap:10px;
+  }}
+
+  .mobileControlBullets{
+    @media screen and (max-width: 750px) {
+    
+      position: absolute;
+      display: flex;
+      gap: 2px;
+      width: 100vw;
+      justify-content: center;
+      bottom: 2vh;
+      
+    }
+   display: none;
+  }
+
+  .circleLight {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #42567A;
+    opacity: 0.4;
+    &:hover{
+      opacity: 1;
+      background-color: #42567A;
+
+    }
+  }
+  
+  .circleDark {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #42567A;
+
+  }
+  
